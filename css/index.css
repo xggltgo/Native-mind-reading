@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+  height: 700px;
+  display: flex;
+  padding: 10px;
+}
+
+.c-left {
+  width: 300px;
+}
+
+.c-right {
+  width: 600px;
+  padding: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(20, 33px);
+  grid-auto-flow: column;
+}
+
+.startGame {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url(../images/bg.gif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s;
+}
+
+.result {
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  background: url(../images/round.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.gameTitle {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.gameTitle p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.game-item {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.game-item span {
+  text-align: right;
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  color: #aaa;
+}
